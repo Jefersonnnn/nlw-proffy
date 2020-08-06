@@ -2,14 +2,14 @@ import express from 'express';
 
 const app = express();
 
-app.get('/users', (request, response) => {
-    const users = [
-        {name: 'Jeferson', age: 26},
-        {name: 'Felipe', age: 26},
-        {name: 'Douglinha', age: 23}
-    ];
+app.use(express.json());
 
-    return response.json(users)
+
+// Corpo (Request Body): Dados para criação ou atualização de um registro
+// Route Params: Identificar qual recurso eu quero atualizar ou deletar (/:id)
+// Query Params: Paginação, filtros, ordenação (request.query) (/users?)
+app.get('/', (request, response) => {
+    return response.json({ message: 'Hello World'});
 });
 
 // localhost:3333
