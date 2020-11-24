@@ -94,7 +94,7 @@ $ yarn start
 ```
 Depois leia o QRCode com o app do [expo](https://play.google.com/store/apps/details?id=host.exp.exponent) ou rode em um emulador.
 
-# :closed_book: Licencia
+# :closed_book: Licença
 
 Lançado em 2020 :closed_book:
 Esse projeto esta sobre [MIT license](./LICENSE).
